@@ -18,6 +18,11 @@ qdrant_storage
 .giga_agent
 giga_agent.conf*.json
 .cursor
+# Track the Cloud Agent environment config while ignoring the rest of .cursor.
+!.cursor/
+.cursor/*
+!.cursor/environment.json
+!.cursor/install.sh
 agents_md
 .claude
 .debug/
